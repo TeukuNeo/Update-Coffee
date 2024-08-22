@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning Coffee</title>
+
+    <link rel="stylesheet" href="sumber/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <button class="sidebar-toggle">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <a href="cart.html">
+            <div class="cart">
+                <i class="bi bi-cart2"></i>
+                <div id="cartAmount" class="cartAmount">0</div>
+            </div>
+        </a>
+
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="#" class="navbar-logo"><i>TOKO </i><span>KOPI</span></a>
+                <button class="close-btn"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <ul class="links">
+                <li>
+                    <a href="#index">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="./menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="#founder">Founder</a>
+                </li>
+                <li>
+                    <a href="./review.html">Review</a>
+                </li>
+                <li>
+                    <a href="./blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="#social">Social</a>
+                </li>
+            </ul>
+            <div class="color-btn-change">
+                <button class="color-btn" id="dark-mode" onclick="darkMode()">MODE</button>
+            </div>
+        </aside>
+    </div>
+
+    <section class="hero" id="home">
+        <main class="content">
+            <h1>Mulai hari mu dengan <span>Kopi</span></h1>
+            <p>
+                Nikmati hari mu dengan cemilan kami!!
+            </p>
+            <a href="./menu.html" class="cta"> BUY NOW</a>
+        </main>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="about-title"><span>TENTANG</span> KAMI</h2>
+        <div class="about-container">
+            <div class="coffee-content">
+                <div class="about-img">
+                    <img src="gambar/louis-hansel.jpg" alt="">
+                </div>
+                <div class="about-content">
+                    <h3 class="about-content-title">Kenapa harus membeli cemilan dan kopi kami?</h3>
+                    <p>Temukan berbagai macam cemilan dengan rasa yang tak terlupakan, dari gurih hingga manis,
+                        yang akan memanjakan lidah Anda. Setiap gigitannya menghadirkan sensasi kelezatan yang tiada
+                        tara.
+                        Kopi kami dibuat dengan biji kopi pilihan yang diolah dengan sepenuh hati, menghasilkan
+                        secangkir
+                        kopi dengan aroma yang memikat dan rasa yang kaya. Sempurna untuk menemani momen Anda.</p>
+                    <div class="Read-more">
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quality" id="quality">
+        <h2 class="quality-title">KUALITAS BIJI <span>KOPI</span> KAMI</h2>
+        <div class="quality-container">
+            <div class="quality-content first" id="quality-modal-1">
+                <div class="quality-explain">
+                    <img src="./gambar/coffee-beans-coffee-svgrepo-com (1).svg" alt="" class="quality-svg first">
+                    <h3 class="quality-x-title">100% Organic & Natural</h3>
+                    <p>We provide organic and natural bean</p>
+                </div>
+            </div>
+            <div class="quality-content second" id="quality-modal-2">
+                <div class="quality-explain">
+                    <img src="./gambar/coffee-bag-svgrepo-com.svg" alt="" class="quality-svg second">
+                    <h3 class="quality-x-title">Manually Sorted</h3>
+                    <p>Every Coffee been sorted by hand</p>
+                </div>
+            </div>
+            <div class="quality-content third" id="quality-modal-3">
+                <div class="quality-explain">
+                    <img src="./gambar/coffee-machine-svgrepo-com.svg" alt="" class="quality-svg third">
+                    <h3 class="quality-x-title">Fresh and Roasted</h3>
+                    <p>We care about freshness and highly roasted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="qualityOverlay" id="qualityOverlay">
+        <div class="modal-quality-container">
+            <h2>Title</h2>
+            <p>Hai ini merupakan konten yang kami buat sepenuh hati</p>
+            <button class="quality-close-modal"><i class="bi bi-x-lg"></i></button>
+        </div>
+    </div>
+
+    <section class="founder" id="founder">
+        <div class="about-founder">
+            <div class="founder-container">
+                <div class="founder-title">
+                    <h2><span>Founder</span> Kami</h2>
+                    <div class="founder-underline"></div>
+                </div>
+                <article class="founder-detail">
+                    <div class="founder-img">
+                        <img src="./gambar/person-1.jpeg" alt="founder-person" id="founder-img-person">
+                    </div>
+                    <h4 id="founder-author">Eric</h4>
+                    <p id="founder-job">Digital Marketing</p>
+                    <p id="founder-info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Incidunt corrupti dicta illum sint eligendi quo soluta
+                        tenetur nihil minima placeat.
+                    </p>
+                    <div class="founder-button">
+                        <button class="rv-prev-btn" onclick="revPrevBtn()">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                        <button class="rv-next-btn" onclick="revNextBtn()">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+                    </div>
+                    <button class="founder-btn" onclick="revRandomBtn()">Surprise me</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social" id="social">
+            <a href=""><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.instagram.com/teukuneo/"><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+        </div>
+
+        <div class="links">
+            <a href="#index">Home</a>
+            <a href="#about">About</a>
+            <a href="./menu.html">Menu</a>
+            <a href="#promo">Promo</a>
+            <a href="./review.html">Review</a>
+            <a href="./blog.html">Blog</a>
+            <a href="#social">social</a>
+        </div>
+        <div class="credit">
+            <p>Created by <a href="">Teuku Neo</a>. | &copy: 2024.</p>
+        </div>
+    </footer>
+</body>
+<script async src="sumber/founder.js"></script>
+<script async src="sumber/data1.js"></script>
+<script async src="sumber/main.js"></script>
+
+</html>

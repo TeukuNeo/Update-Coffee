@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./sumber/blog.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <button class="sidebar-toggle">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <a href="cart.html">
+            <div class="cart">
+                <i class="bi bi-cart2"></i>
+                <div id="cartAmount" class="cartAmount">0</div>
+            </div>
+        </a>
+
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="#" class="navbar-logo"><i>TOKO</i><span>KOPI</span></a>
+                <button class="close-btn"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <ul class="links">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="./review.html">Review</a>
+                </li>
+                <li>
+                    <a href="./blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="#footer">Social</a>
+                </li>
+            </ul>
+            <div class="color-btn-change">
+                <button class="color-btn" id="dark-mode" onclick="darkMode()">MODE</button>
+            </div>
+        </aside>
+    </div>
+
+    <section class="blog" id="blog"></section>
+
+    <footer>
+        <div class="social" id="social">
+            <a href=""><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.instagram.com/teukuneo/"><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+        </div>
+
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="./menu.html">Menu</a>
+            <a href="#promo">Promo</a>
+            <a href="./review.html">Review</a>
+            <a href="./blog.html">Blog</a>
+            <a href="#footer">social</a>
+        </div>
+        <div class="credit">
+            <p>Created by <a href="">Teuku Neo</a>. | &copy: 2024.</p>
+        </div>
+    </footer>
+</body>
+<script async src="sumber/data1.js"></script>
+<script src="./sumber/blog.js"></script>
+
+</html>
